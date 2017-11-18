@@ -38,7 +38,7 @@ public class SubArraySum {
 		int currentSum = arr[0], start = 0;
 		for (int i = 1; i <= size; i++) {
 			// check if current sum exceeds target sum, then remove starting elements
-			if (currentSum > sum && start < i - 1) {
+			while (currentSum > sum && start < i - 1) {
 				currentSum -= arr[start];
 				start++;
 			}
