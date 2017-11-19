@@ -40,7 +40,8 @@ public class MissingNumberInArray {
 			// subtract each array element
 			total -= arr[i];
 		}
-		// return the remaining total which contains missing element that should be added to the array to make total
+		// return the remaining total which contains missing element that should be
+		// added to the array to make total
 		return total;
 	}
 }
